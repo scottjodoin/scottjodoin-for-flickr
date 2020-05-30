@@ -1,5 +1,7 @@
 # README
 
+See it live at https://scottjodoin-for-flickr.herokuapp.com/ !
+
 Uses the flickr api to show 10 photos, given a flicker nsid (e.g. 188158462@N02)
 
 To install, you need to set the following ENV variables:
