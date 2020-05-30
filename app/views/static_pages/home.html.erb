@@ -1,0 +1,12 @@
+<h1>Scott Jodoin's 10 Photo-Viewer</h1>
+<h2>... for Flickr</h2>
+
+<p>
+Try <strong>188659054@N02</strong>
+</p>
+
+<%= form_with(url:'static_pages/show', method: :get, local: true) do |f| %>
+  <%= f.label "[q][user_id]", "User Id:" %>
+  <%= f.text_field "[q][user_id]", id: :q %>
+  <%= f.submit "View" %>
+<% end %>

@@ -7,9 +7,22 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <% if flash[:notice] %>
+      <div class="notice" style="position:fixed;left:0px;top:0px;width:100%;background:pink"><%= flash[:notice] %></div>
+    <% end %>
   </head>
 
   <body>
+
     <%= yield %>
+    <script>
+      setTimeout(()=>{
+        var $notices = document.getElementsByClassName("notice")
+        while ($notices.length > 0) {
+          $notices[0].parentNode.removeChild($notices[0]);
+        }
+      },1500)
+    </script>
   </body>
 </html>

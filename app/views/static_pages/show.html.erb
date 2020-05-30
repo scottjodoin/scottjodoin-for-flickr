@@ -1,0 +1,17 @@
+<!-- I avoid inline styles, but for this toy app, this is quick -->
+<h1><%= @user %>'s photos.</h1>
+<div style="overflow:auto">
+  <% @photos.each do |photo| %>
+    <div style="float:left;margin: 2px;border:2px solid grey">
+      <div>
+        <%= image_tag FlickRaw.url_b(photo) %>
+      </div>
+      <div style="text-align:center">
+        <%= photo.title %>
+      </div>
+    </div>
+  <% end %>
+</div>
+<div>
+  <%= link_to "<< Go back", root_path %>
+</div>
