@@ -1,24 +1,12 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Uses the flickr api to show 10 photos, given a flicker nsid (e.g. 188158462@N02)
 
-Things you may want to cover:
+To install, you need to set the following ENV variables:
 
-* Ruby version
+```
+export FLICKR_KEY='YOURFLICKRAPIKEY'
+export FLICKR_SECRET='YOURFLICKRAPISECRET'
+```
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Api keys can be found from the [Flickr App Garden](https://www.flickr.com/services/)
