@@ -9,4 +9,4 @@ export FLICKR_KEY='YOURFLICKRAPIKEY'
 export FLICKR_SECRET='YOURFLICKRAPISECRET'
 ```
 
-Api keys can be found from the [Flickr App Garden](https://www.flickr.com/services/)
+Api keys and secrets can be found from the [Flickr App Garden](https://www.flickr.com/services/)
